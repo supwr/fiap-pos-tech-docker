@@ -7,8 +7,6 @@ services:
     volumes:
       - .:/app
     env_file: .env
-    environment:
-      PORT: $PORT
     ports:
       - 8000:8000
     networks:
