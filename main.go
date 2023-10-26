@@ -39,7 +39,7 @@ func main() {
 	s := service.NewLanguageService(repo)
 	app := application.NewApp(s)
 
-	r.GET("/languages", func(c *gin.Context) {
+	r.GET("/", func(c *gin.Context) {
 		l, err := app.ListLanguages()
 
 		if err != nil {
